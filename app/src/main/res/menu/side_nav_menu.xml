@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/languageTranslator"
+            android:icon="@drawable/ic_translate"
+            android:title="Language Translator"
+            app:tint="@color/black" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/imageScanner"
+            android:icon="@drawable/ic_scanner"
+            android:title="Scanner"
+            app:tint="@color/black" />
+    </group>
+
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/whatsapp"
+            android:icon="@drawable/ic_whatsapp"
+            android:title="Chat through Whatsapp"
+            app:tint="@color/black" />
+    </group>
+
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/complaintRegistration"
+            android:icon="@drawable/ic_complaint"
+            android:title="Complaint Registration"
+            app:tint="@color/black" />
+    </group>
+
+    <item android:title="Legal">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/privacy"
+                    android:icon="@drawable/ic_privacy"
+                    android:title="Privacy Policy" />
+
+                <item
+                    android:id="@+id/terms"
+                    android:icon="@drawable/ic_terms"
+                    android:title="Terms &amp; Conditions" />
+
+            </group>
+        </menu>
+
+
+    </item>
+
+    <item android:title="About BJP">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/bjp_up"
+                    android:icon="@drawable/ic_flag"
+                    android:title="BJP Uttar Pradesh" />
+
+                <item
+                    android:id="@+id/bjp_india"
+                    android:icon="@drawable/ic_flag"
+                    android:title="BJP India" />
+
+            </group>
+        </menu>
+
+
+    </item>
+
+    <group
+        android:id="@+id/group5"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/ic_about_us"
+            android:title="About Us"
+            app:tint="@color/black" />
+    </group>
+
+</menu>

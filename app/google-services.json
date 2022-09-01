@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217251054511",
+    "project_id": "tejpal-nagar",
+    "storage_bucket": "tejpal-nagar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217251054511:android:e582e48a023fb7e292e55a",
+        "android_client_info": {
+          "package_name": "app.tejpalnagar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217251054511-935gkb5qs6hir0g4n2dji84vsb5el79b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJcI8jwcTzIp16LGleu4YNFzpGvjQueJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217251054511-935gkb5qs6hir0g4n2dji84vsb5el79b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
