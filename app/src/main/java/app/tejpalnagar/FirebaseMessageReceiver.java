@@ -83,7 +83,7 @@ public class FirebaseMessageReceiver extends FirebaseMessagingService {
         int notificationID = new Random().nextInt(3000);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            String adminChannelName = "Bubble Up Retailers";
+            String adminChannelName = "Tejpal Nagar";
             String adminChannelDescription = "Device to device notification";
 
             NotificationChannel adminChannel = new NotificationChannel(ADMIN_CHANNEL_ID, adminChannelName, NotificationManager.IMPORTANCE_HIGH);

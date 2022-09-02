@@ -28,7 +28,6 @@ import java.util.ArrayList;
 import app.tejpalnagar.Adapters.MemorableAdapter;
 import app.tejpalnagar.Adapters.SliderAdapter;
 import app.tejpalnagar.Adapters.TejpalPhotoAdapter;
-import app.tejpalnagar.Adapters.VideoAdapter;
 import app.tejpalnagar.Adapters.YoutubeAdapter;
 import app.tejpalnagar.BottomNavSection.EventsActivity;
 import app.tejpalnagar.BottomNavSection.ProfileActivity;
@@ -40,7 +39,6 @@ import app.tejpalnagar.SideNavSection.AboutUsActivity;
 import app.tejpalnagar.SideNavSection.BJPIndiaActivity;
 import app.tejpalnagar.SideNavSection.BJPUPActivity;
 import app.tejpalnagar.SideNavSection.ComplaintActivity;
-import app.tejpalnagar.SideNavSection.LanguageTranslatorActivity;
 import app.tejpalnagar.SideNavSection.PrivacyActivity;
 import app.tejpalnagar.SideNavSection.ScanningActivity;
 import app.tejpalnagar.SideNavSection.TermsAndConditionsActivity;
@@ -84,12 +82,9 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         viewPagerImageSlider.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(40));
-        compositePageTransformer.addTransformer(new ViewPager2.PageTransformer() {
-            @Override
-            public void transformPage(@NonNull View page, float position) {
-                float r = 1 - Math.abs(position);
-                page.setScaleY(0.85f + r * 0.15f);
-            }
+        compositePageTransformer.addTransformer((page, position) -> {
+            float r = 1 - Math.abs(position);
+            page.setScaleY(0.85f + r * 0.15f);
         });
         viewPagerImageSlider.setPageTransformer(compositePageTransformer);
         viewPagerImageSlider.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
